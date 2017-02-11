@@ -2,11 +2,17 @@
   variables.less - Override the base bootstrap variables for further customization
 */
 
+// Custom
+@from: #DC2424;
+@to: #4A569D;
+
+// Bootstrap overrides
 @font-family-sans-serif:  'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @headings-font-family:    'PT Sans';
 @headings-font-weight:    700;
 
-@brand-primary: #D38312;
+@brand-primary: @from;
 
-@link-hover-color: #A83279;
+@link-hover-color: @to;
 @link-hover-decoration: none;
+

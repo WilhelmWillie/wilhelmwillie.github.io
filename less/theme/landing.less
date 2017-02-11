@@ -47,11 +47,10 @@
       margin-bottom: 10px;
       display: inline;
 
-      color: #D38312;
-
-      background: #D38312; /* fallback for old browsers */
-      background: -webkit-linear-gradient(to left, #D38312 , #A83279);
-      background: linear-gradient(to left, #D38312 , #A83279);
+      color: @from;
+      background: @from; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, @from , @to);
+      background: linear-gradient(to left, @from , @to);
 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

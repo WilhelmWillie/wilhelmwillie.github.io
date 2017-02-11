@@ -1,3 +1,9 @@
+<!--
+  Hey friends inspecting my HTML! 
+  - Check out my code, LESS stylesheets, etc. on my GitHub: github.com/wilhelmwillie
+  - E-mail me at wwillie@usc.edu if you have any questions/comments
+-->
+
 <!doctype html>
 
 <html>
@@ -32,16 +38,16 @@
 
             <p>Born in the Philippines, raised in Jacksonville, and am now living and studying in Los Angeles. I'm a code goober, a wannabe photographer, and an aspiring entrepreneur. I have a passion for technology and am always eager to work on new exciting projects.</p>
 
-            <p>At the moment, I am searching for an internship for the summer of 2017. Check out my projects, see what I can do, and reach out to me for any comments, concerns, or inquiries</p>
+            <p>At the moment, I am searching for an internship for the summer of 2017. Check out my projects, see what I do, and reach out to me for any questions, comments, or inquiries.</p>
 
             <div class='skills'>
               <h3>Skills</h3>
 
-              <p><b>Languages</b> Java, Python, JavaScript</p>
+              <p><b>Languages</b><br> Java, Python, JavaScript, Ruby, HTML, CSS, SQL, C++</p>
 
-              <p><b>Technologies</b> Node.js, Express, Ruby on Rails</p>
+              <p><b>Technologies</b><br> Node.js, Express, Ruby on Rails, Bootstrap, jQuery, Flask, MongoDB, MySQL</p>
 
-              <p><b>Misc</b> Photography, UI/UX Design, Product Development</p>
+              <p><b>Misc</b><br> Unix, Linux, Git, Photography, UI/UX Design, Product Development</p>
             </div>
 
             <div class='contact'>
@@ -55,28 +61,32 @@
             </div>
           </div>
 
-          <div class='col-md-7'>
-            <div class='projects-grid'>
-              <div class='project-sizer'></div>
-
-              <div class='project project-full'>
-                <img src='http://placehold.it/1200x600/303030/F2F2F2' class='img-responsive' />
-              </div>
-              
-              <div class='project'>
-                <img src='http://placehold.it/600x600/850C0C/F2F2F2' class='img-responsive' />
+          <div class='col-md-7 projects'>
+            <div class='row'>
+              <div class='col-md-6'>
+                <div class='project'>
+                  <img src='./assets/img/snapdrop.jpg' class='img-responsive' />
+                </div>
               </div>
 
-              <div class='project'>
-                <img src='http://placehold.it/600x600/546BD6/F2F2F2' class='img-responsive' />
+              <div class='col-md-6'>
+                <div class='project'>
+                  <img src='./assets/img/kit.jpg' class='img-responsive' />
+                </div>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='col-md-6'>
+                <div class='project'>
+                  <img src='./assets/img/listed.jpg' class='img-responsive' />
+                </div>
               </div>
 
-              <div class='project'>
-                <img src='http://placehold.it/600x600/546BD6/F2F2F2' class='img-responsive' />
-              </div>
-
-              <div class='project'>
-                <img src='http://placehold.it/600x600/850C0C/F2F2F2' class='img-responsive' />
+              <div class='col-md-6'>
+                <div class='project'>
+                  <img src='./assets/img/wilbur.jpg' class='img-responsive' />
+                </div>
               </div>
             </div>
           </div>
@@ -86,22 +96,25 @@
 
     <footer>
       <div class='container'>
-        <p>Wilhelm Willie &copy; 2017 - Fight On</p>
+        <div class='row'>
+          <div class='col-md-6'>
+            <p>Wilhelm Willie &copy; 2017 - Fight On</p>
+          </div>
+
+          <div class='col-md-6 text-right'>
+            <p class='links'>
+              <a href='./resume' target='_blank'>Resume</a>
+              <a href='https://linkedin.com/in/wilhelmwillie' target='_blank'>LinkedIn</a>
+              <a href='https://github.com/wilhelmwillie' target='_blank'>GitHub</a>
+              |
+              <a href='mailto:wwillie@usc.edu' class='email'>wwillie@usc.edu</a>
+            </p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <script src='./assets/js/jquery.min.js'></script>
     <script src='./assets/js/bootstrap.min.js'></script>
-    <script src='./assets/js/masonry.pkgd.min.js'></script>
-    <script src='./assets/js/imagesloaded.pkgd.min.js'></script>
-
-    <script>
-      var $grid = $('.projects-grid').imagesLoaded(function() {
-        $grid.masonry({
-          itemSelector: '.project',
-          columnWidth: '.project-sizer'
-        });
-      });
-    </script>
   </body>
 </html>

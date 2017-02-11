@@ -2,19 +2,52 @@
   projects.less - Styles for the projects grid
 */
 
-.project, .project-sizer {
-  width: 50%;
+.project {
+  margin-bottom: 30px;
+  position: relative;
+  transition: 0.5s all;
 
   img {
-    width: 100%;
+    min-width: 100%;
   }
 
-  @media screen and (max-width: @screen-md) {
-    width: 100%;
+  .title {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    right: 30px;
+    top: auto;
+    background: lighten(@to, 15%); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, lighten(@to, 15%) , @to);
+    background: linear-gradient(to left, lighten(@to, 15%) , @to);
+    padding: 5px 25px;
+    color: #FFFFFF;
+    transition: 0.5s all;
+
+    h4 {
+      font-family: 'Lato', 'Helvetica Neue', sans-serif;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover {
+    .title {
+      transform: translateY(-400%);
+      transition: 0.5s all;
+    }
   }
 }
 
-.project-full {
+.project-100 {
   width: 100%;
 }
 
+.project-60 {
+  width: 55%;
+}
+
+.project-40 {
+  width: 45%;
+}
