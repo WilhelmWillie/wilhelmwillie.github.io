@@ -57,7 +57,11 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: @screen-md) {
+        font-size: 4em;
+      }
+
+      @media screen and (max-width: @screen-sm) {
         font-size: 3em;
       }
     }
