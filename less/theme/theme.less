@@ -1,0 +1,28 @@
+/*
+  theme.less - Styles for base HTML (p, headings, a, etc.) and other general styles
+*/
+
+p {
+  line-height: 1.5em;
+  color: #616161;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+a {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  font-weight: 300;
+
+  &:hover {
+    transition: 1s all;
+  }
+}
+
+h2 {
+  color: lighten(@brand-primary, 5%);
+}
+
+div.content {
+  padding: 75px 0;
+}

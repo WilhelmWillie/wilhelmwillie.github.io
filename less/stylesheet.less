@@ -1,8 +1,19 @@
+/*
+  stylesheet.less - The LESS file that gets compiled into stylesheet.css
+*/
+
 // Load in Bootstrap styles
 @import './bootstrap/bootstrap';
 
+// Load in fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|PT+Sans:700');
+
 // Override Bootstrap variables
-@import './variables';
+@import './theme/variables';
 
 // Theme component styles
-@import './header';
+@import './theme/theme'; // Styles for base HTML elements (body, headings, text, image, etc) 
+@import './theme/landing'; // Styles for the landing div, a large full screen intro
+@import './theme/contact'; // Styles for the contact section of the site
+@import './theme/projects';
+@import './theme/footer';

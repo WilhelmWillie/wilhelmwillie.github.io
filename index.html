@@ -2,53 +2,106 @@
 
 <html>
   <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
     <title>Wilhelm Willie</title>
 
     <link href='./assets/css/stylesheet.css' type='text/css' rel='stylesheet'>
-
-    <script src='./js/jquery.min.js'></script>
-    <script src='./js/bootstrap.min.js'></script>
   </head>
 
   <body>
-    <div class='container'>
-      <header>
+    <div class='landing'>
+      <div class='landing-bg'></div>
+      
+      <div class='landing-text'>
         <h1>Wilhelm Willie</h1>
-
-        <nav class='navbar navbar-default'>
-          <ul class='nav navbar-nav'>
-              <li><a href='#'>Home</a></li>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Projects</a></li>
-              <li><a href='#'>Photography</a></li>
-              <li><a href='#'>Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <div class='row'>
-        <div class='col-md-12'>
-          <h2>Developer &bull; Designer &bull; Photographer</h2>
-        </div>
+        <p class='lead'>Developer, Designer, &amp; Creator</p>
       </div>
-
-      <div class='row'>
-        <div class='col-md-6'>
-          <h3>Developer</h3>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        </div>
-
-        <div class='col-md-6'>
-          <h3>Designer</h3>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        </div>
-      </div>
-
-      <footer>
-        <p>Wilhelm Willie &copy; 2017 - Made and designed with <span class='glyphicon glyphicon-heart'></span></p>
-      </footer>
     </div>
+
+    <div class='content'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-md-5'>
+            <h2>Hi, I'm Wilhelm Willie.</h2>
+
+            <p>But you can just call me <em>Willie</em>. I'm a freshman at
+            the University of Southern California studying computer science and
+            business administration.</p>
+
+            <p>Born in the Philippines, raised in Jacksonville, and am now living and studying in Los Angeles. I'm a code goober, a wannabe photographer, and an aspiring entrepreneur. I have a passion for technology and am always eager to work on new exciting projects.</p>
+
+            <p>At the moment, I am searching for an internship for the summer of 2017. Check out my projects, see what I can do, and reach out to me for any comments, concerns, or inquiries</p>
+
+            <div class='skills'>
+              <h3>Skills</h3>
+
+              <p><b>Languages</b> Java, Python, JavaScript</p>
+
+              <p><b>Technologies</b> Node.js, Express, Ruby on Rails</p>
+
+              <p><b>Misc</b> Photography, UI/UX Design, Product Development</p>
+            </div>
+
+            <div class='contact'>
+              <a href='./resume' class='resume' target='_blank'>Resume</a>
+              <a href='https://linkedin.com/in/wilhelmwillie' class='linkedin' target='_blank'>LinkedIn</a>
+              <a href='https://github.com/wilhelmwillie' class='github' target='_blank'>GitHub</a>
+
+              <br>
+
+              <a href='mailto:wwillie@usc.edu' class='email'>wwillie@usc.edu</a>
+            </div>
+          </div>
+
+          <div class='col-md-7'>
+            <div class='projects-grid'>
+              <div class='project-sizer'></div>
+
+              <div class='project project-full'>
+                <img src='http://placehold.it/800x400/303030/F2F2F2' class='img-responsive' />
+              </div>
+              
+              <div class='project'>
+                <img src='http://placehold.it/600x600/850C0C/F2F2F2' class='img-responsive' />
+              </div>
+
+              <div class='project'>
+                <img src='http://placehold.it/600x600/546BD6/F2F2F2' class='img-responsive' />
+              </div>
+
+              <div class='project'>
+                <img src='http://placehold.it/600x600/546BD6/F2F2F2' class='img-responsive' />
+              </div>
+
+              <div class='project'>
+                <img src='http://placehold.it/600x600/850C0C/F2F2F2' class='img-responsive' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class='container'>
+        <p>Wilhelm Willie &copy; 2017 - Fight On</p>
+      </div>
+    </footer>
+
+    <script src='./assets/js/jquery.min.js'></script>
+    <script src='./assets/js/bootstrap.min.js'></script>
+    <script src='./assets/js/masonry.pkgd.min.js'></script>
+    <script src='./assets/js/imagesloaded.pkgd.min.js'></script>
+
+    <script>
+      var $grid = $('.projects-grid').imagesLoaded(function() {
+        $grid.masonry({
+          itemSelector: '.project',
+          columnWidth: '.project-sizer'
+        });
+      });
+    </script>
   </body>
 </html>

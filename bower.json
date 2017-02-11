@@ -4,6 +4,8 @@
   "description": "Personal site for Wilhelm Willie",
   "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "masonry": "^4.1.1",
+    "imagesloaded": "^4.1.1"
   }
 }
