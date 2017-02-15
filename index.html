@@ -14,6 +14,7 @@
     <title>Wilhelm Willie</title>
 
     <link href='./assets/css/stylesheet.css' type='text/css' rel='stylesheet'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' type='text/css' rel='stylesheet'>
   </head>
 
   <body>
@@ -51,41 +52,79 @@
             </div>
 
             <div class='contact'>
-              <a href='./resume' class='resume' target='_blank'>Resume</a>
-              <a href='https://linkedin.com/in/wilhelmwillie' class='linkedin' target='_blank'>LinkedIn</a>
-              <a href='https://github.com/wilhelmwillie' class='github' target='_blank'>GitHub</a>
+              <a href='./Wilhelm_Willie_Resume.pdf' class='resume' target='_blank'>
+                <i class='fa fa-file-text' aria-hidden='true'></i> Resume
+              </a>
+              
+              <a href='https://linkedin.com/in/wilhelmwillie' class='linkedin' target='_blank'>
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i> LinkedIn
+              </a>
+              
+              <a href='https://github.com/wilhelmwillie' class='github' target='_blank'>
+                <i class='fa fa-github' aria-hidden='true'></i> GitHub
+              </a>
 
               <br>
 
-              <a href='mailto:wwillie@usc.edu' class='email'>wwillie@usc.edu</a>
+              <a href='mailto:wwillie@usc.edu' class='email'>
+                <i class='fa fa-envelope' aria-hidden='true'></i> wwillie@usc.edu
+              </a>
             </div>
           </div>
 
           <div class='col-md-7 projects'>
             <div class='row'>
               <div class='col-md-6'>
-                <div class='project'>
+                <div class='project' data-modal='.snapdrop'>
                   <img src='./assets/img/snapdrop.jpg' class='img-responsive' />
+
+                  <div class='overlay'>
+                    <div class='overlay-content'>
+                      <h4>SnapDrop</h4>
+                      <p>Web based community for photography enthusiasts to share locations for great photo shoots</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class='col-md-6'>
-                <div class='project'>
+                <div class='project' data-modal='.kit'>
                   <img src='./assets/img/kit.jpg' class='img-responsive' />
+
+                  <div class='overlay'>
+                    <div class='overlay-content'>
+                      <h4>Kit</h4>
+                      <p>Web platform aimed to help beauty enthusiasts discover new products, find inspiration, and become part of a global community</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class='row'>
               <div class='col-md-6'>
-                <div class='project'>
+                <div class='project' data-modal='.listed'>
                   <img src='./assets/img/listed.jpg' class='img-responsive' />
+
+                  <div class='overlay'>
+                    <div class='overlay-content'>
+                      <h4>Listed</h4>
+                      <p>Web app that allows users to share and create lists of content like the "best restaurants in LA"</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class='col-md-6'>
-                <div class='project'>
+                <div class='project' data-modal='.wilbur'>
                   <img src='./assets/img/wilbur.jpg' class='img-responsive' />
+
+                  <div class='overlay'>
+                    <div class='overlay-content'>
+                      <h4>Wilbur</h4>
+                      <p>Interactive bot that can provide on-demand Twitter profile analytics via Twitter</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,16 +136,26 @@
     <footer>
       <div class='container'>
         <div class='row'>
-          <div class='col-md-6'>
+          <div class='col-md-6 text-center'>
             <p>Wilhelm Willie &copy; 2017 - Fight On</p>
           </div>
 
-          <div class='col-md-6 text-right'>
+          <div class='col-md-6 text-center'>
             <p class='links'>
-              <a href='./resume' target='_blank'>Resume</a>
-              <a href='https://linkedin.com/in/wilhelmwillie' target='_blank'>LinkedIn</a>
-              <a href='https://github.com/wilhelmwillie' target='_blank'>GitHub</a>
+              <a href='./Wilhelm_Willie_Resume.pdf' target='_blank' alt='Resume'>
+                <i class='fa fa-file-text' aria-hidden='true'></i>
+              </a>
+
+              <a href='https://linkedin.com/in/wilhelmwillie' target='_blank' alt='LinkedIn'>
+                <i class='fa fa-linkedin-square' aria-hidden='true'></i>
+              </a>
+
+              <a href='https://github.com/wilhelmwillie' target='_blank' alt='GitHub'>
+                <i class='fa fa-github' aria-hidden='true'></i>
+              </a>
+
               |
+              
               <a href='mailto:wwillie@usc.edu' class='email'>wwillie@usc.edu</a>
             </p>
           </div>
@@ -114,7 +163,103 @@
       </div>
     </footer>
 
+    <!-- PROJECT POPUP MODALS -->
+
+    <!-- SnapDrop -->
+    <div class='modal fade snapdrop'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>SnapDrop</h4>
+          </div>
+
+          <div class='modal-body'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+          </div>
+
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kit -->
+    <div class='modal fade kit'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Kit</h4>
+          </div>
+
+          <div class='modal-body'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+          </div>
+
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Listed -->
+    <div class='modal fade listed'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Listed</h4>
+          </div>
+
+          <div class='modal-body'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+          </div>
+
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wilbur -->
+    <div class='modal fade wilbur'>
+      <div class='modal-dialog modal-lg' role='document'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+            <h4 class='modal-title'>Wilbur</h4>
+          </div>
+
+          <div class='modal-body'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis finibus erat. Aenean a ex mollis, tincidunt libero in, interdum nibh. Aenean imperdiet viverra lacus nec aliquet. Ut lacinia sollicitudin mauris, ac accumsan leo molestie in. Sed ut augue vestibulum nulla vestibulum egestas quis nec leo. Mauris in augue justo. Fusce tristique volutpat lacus a porttitor. Etiam eget tellus elit. Etiam varius, purus laoreet eleifend luctus, arcu augue porttitor nibh, ut placerat justo libero sed purus.</p>
+          </div>
+
+          <div class='modal-footer'>
+            <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src='./assets/js/jquery.min.js'></script>
     <script src='./assets/js/bootstrap.min.js'></script>
+
+    <script>
+    $('.project').click(function() {
+      $($(this).data('modal')).modal('toggle');
+    });
+    </script>
   </body>
 </html>
