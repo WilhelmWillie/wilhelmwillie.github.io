@@ -9,9 +9,7 @@
 }
 
 .landing {
-  background-image: url('../img/bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+  .gradient-bg(@from, @to);
 
   height: 100vh;
   width: 100vw;
@@ -47,12 +45,7 @@
       margin-bottom: 10px;
       display: inline;
 
-      color: @landing-color;
-      .gradient-bg(@from, @to);
-
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #FFFFFF;
 
       @media screen and (max-width: @screen-md) {
         font-size: 4em;
@@ -66,6 +59,7 @@
     p {
       font-weight: 300;
       text-transform: uppercase;
+      color: #FFFFFF;
     }
   }
 }
