@@ -1,0 +1,23 @@
+.hero {
+  .title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+
+    @include tablet {
+      font-size: 8rem;
+    }
+  }
+
+  &.is-large {
+    @include tablet {
+      .hero-body {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+    }
+  }
+}

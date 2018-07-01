@@ -1,0 +1,9 @@
+// Import initial Bulma variables and functions
+@import "../bower_components/bulma/sass/utilities/initial-variables";
+@import "../bower_components/bulma/sass/utilities/functions";
+
+// Variable overrides 
+$family-sans-serif: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+// Import Bulma, a CSS framework
+@import "../bower_components/bulma/bulma";
