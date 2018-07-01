@@ -1,8 +1,22 @@
+@keyframes click-to-scroll {
+    0% {
+      bottom: -40px
+    }
+
+    50% {
+      bottom: -35px;
+    }
+
+    100% {
+      bottom: -40px;
+    }
+}
+
 .hero {
   background-image: url('../img/bg.jpg');
   background-size: cover;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   .title {
     font-size: 6rem;
@@ -17,13 +31,8 @@
     }
   }
 
-  &.is-large {
-    @include tablet {
-      .hero-body {
-        padding-top: 14rem;
-        padding-bottom: 14rem;
-      }
-    }
+  &.is-fullheight {
+    min-height: 90vh;
   }
 }
 
@@ -37,6 +46,9 @@
   z-index: 999;
   margin-left: 50%;
   cursor: pointer;
+
+  animation: click-to-scroll 2s 8;
+
   transition: 0.5s all;
 
   &:hover {
