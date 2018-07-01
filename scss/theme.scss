@@ -5,5 +5,9 @@
 // Variable overrides 
 $family-sans-serif: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
 
+$section-padding: 5rem 1.5rem !default;
+$section-padding-medium: 9rem 1.5rem !default;
+$section-padding-large: 18rem 1.5rem !default;
+
 // Import Bulma, a CSS framework
 @import "../bower_components/bulma/bulma";
