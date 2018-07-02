@@ -38,7 +38,7 @@ Hey friends inspecting my HTML!
 
     <section class="section">
       <div class="container">
-        <h2 data-aos="fade-down">I build dope <span class="stuff">$#!+</span></h2>
+        <h2 data-aos="fade-down" class="intro-message">I build dope <span class="stuff">$#!+</span></h2>
       </div>
     </section>
 
@@ -52,23 +52,23 @@ Hey friends inspecting my HTML!
 
             <h3 class="has-text-centered">Wilhelm Willie</h3>
 
-            <p>
+            <p class="details">
               <span class="icon"><i class="fas fa-graduation-cap"></i></span> 
               University of Southern California
             </p>
 
-            <p>
+            <p class="details">
               <span class="icon"><i class="fas fa-calendar"></i></span> 
               Class of 2020
             </p>
 
-            <p>
+            <p class="details">
               <span class="icon"><i class="fas fa-map-marker"></i></span> 
               Los Angeles, CA
             </p>
 
             <div class="bio-button-container has-text-centered">
-              <button class="button button-primary">Read Bio</button>
+              <button class="button button-primary modal-button" data-modal="bio">Read Bio</button>
             </div>
           </div>
 
@@ -76,8 +76,6 @@ Hey friends inspecting my HTML!
             <h2 class="about-title"><b>Full stack developer</b> with a passion for building great <b>products.</b></h2>
 
             <p>I'm a tinkerer, a creative, and a builder. Let's talk code, design, and product. Currently interested in software engineering and product management opportunities. .</p>
-
-            <br>
 
             <h3>Skills</h3>
 
@@ -127,6 +125,34 @@ Hey friends inspecting my HTML!
         </div>
       </div>
     </section>
+
+    <!-- Modals -->
+    <div class="modal" id="bio-modal">
+      <div class="modal-background click-to-close-modal"></div>
+      <div class="modal-content">
+        <section class="modal-card-body">
+          <h2>Hi, I'm Wilhelm Willie.</h2>
+
+          <h3>Background</h3>
+          <p>I'm a rising Junior at the University of Southern California studying Computer Science and Business Administration with a minor in Digital Entrepreneurship.</p>
+
+          <p>Born in the Philippines, raised in Jacksonville, and am now living and studying in Los Angeles. I'm a code goober, a wannabe photographer, and an aspiring entrepreneur. I have a passion for technology and am always eager to work on new exciting projects.</p>
+
+          <h3>Experience</h3>
+          <p>In the summer of 2017, I interned with McKinsey &amp; Company as a Digital Analyst, Full Stack Developer intern where I worked alongside consultants, designers, and developers to build digital experiences for clients.</p>
+
+          <p>This summer, I'm working with Salesforce as a Software Engineering Intern on the Tech &amp; Products Platform Apps team. I'm currently working with business units within Salesforce to develop internal applications to help centralize internal processes and collect data for Salesforce's T&amp;P programs.</p>
+
+          <h3>Aspirations</h3>
+          <p>I'm a product-oriented developer who hopes to pursue a career in Software Engineering and/or Product Management.</p>
+
+          <p><b>E-Mail:</b> wwillie@usc.edu</p>
+          <p><b>GitHub:</b> wilhelmwillie</p>
+          <p><b>LinkedIn:</b> wilhelmwillie</p>
+        </section>
+      </div>
+      <button class="modal-close is-large click-to-close-modal" aria-label="close"></button>
+    </div>
 
     <script src="./assets/js/willie.js"></script>
   </body>

@@ -1,6 +1,28 @@
 // Initialize 'animation on scroll library'
 AOS.init()
 
+// Show bio modal
+var buttons = document.querySelectorAll('.modal-button')
+buttons.forEach(function(button) {
+  button.onclick = function() {
+    var modal = this.dataset.modal
+    var modalElement = document.getElementById(modal + '-modal')
+
+    modalElement.classList.add('is-active')
+  }
+})
+
+// Modal toggle for modal closes
+var modalCloses = document.querySelectorAll('.click-to-close-modal')
+modalCloses.forEach(function(modalClose) {
+  modalClose.onclick = function() {
+    var parentNode = modalClose.parentNode
+    if (parentNode.classList.contains('is-active')) {
+      parentNode.classList.remove('is-active')
+    }
+  }
+})
+
 // Controls hero header type effect
 var heroSubtitle = document.querySelector('#hero-subtitle')
 

@@ -12,21 +12,25 @@
     }
 }
 
-.stuff {
-  padding: 5px 10px;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
-  transform: rotate(2deg);
-  display: inline-block;
-
-  background: #3023ae;
-  background: -moz-linear-gradient(-45deg, #3023ae 0%, #7c198c 100%);
-  background: -webkit-linear-gradient(-45deg, #3023ae 0%,#7c198c 100%);
-  background: linear-gradient(135deg, #3023ae 0%,#7c198c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3023ae', endColorstr='#7c198c',GradientType=1 );
+.intro-message {
+  margin-bottom: 0;
   
-  animation: stuff 2.5s infinite;
+  .stuff {
+    padding: 5px 10px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
+    transform: rotate(2deg);
+    display: inline-block;
+
+    background: #3023ae;
+    background: -moz-linear-gradient(-45deg, #3023ae 0%, #7c198c 100%);
+    background: -webkit-linear-gradient(-45deg, #3023ae 0%,#7c198c 100%);
+    background: linear-gradient(135deg, #3023ae 0%,#7c198c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3023ae', endColorstr='#7c198c',GradientType=1 );
+    
+    animation: stuff 2.5s infinite;
+  }
 }
 
 .about-title {
@@ -49,6 +53,10 @@
 
   .bio-button-container {
     margin-top: 1.5rem;
+  }
+
+  .details {
+    margin-bottom: 0.15rem;
   }
 }
 
