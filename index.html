@@ -15,6 +15,7 @@ Hey friends inspecting my HTML!
 
     <link href="https://fonts.googleapis.com/css?family=Lato:200,400,600,700,700i,900" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -24,9 +25,11 @@ Hey friends inspecting my HTML!
     <section class="hero is-dark is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title" data-aos="zoom-in" data-aos-duration="1000">
-            Willie
-          </h1>
+          <div data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="title">Willie</h1>
+
+            <h2 class="subtitle" id="hero-subtitle">Developer</h2>
+          </div>
         </div>
       </div>
 
@@ -44,16 +47,28 @@ Hey friends inspecting my HTML!
     <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-one-third me-column">
-            <img src="./assets/img/portrait.jpg" alt="Wilhelm Willie Portrait" class="headshot" />
+          <div class="column is-one-third me-column" data-aos="zoom-in-right">
+            <img src="./assets/img/portrait.jpg" alt="Wilhelm Willie Portrait" class="headshot"/>
 
             <h3 class="has-text-centered">Wilhelm Willie</h3>
-            <p>University of Southern California</p>
-            <p>Class of 2020</p>
-            <p>Los Angeles, CA</p>
+
+            <p>
+              <span class="icon"><i class="fas fa-graduation-cap"></i></span> 
+              University of Southern California
+            </p>
+
+            <p>
+              <span class="icon"><i class="fas fa-calendar"></i></span> 
+              Class of 2020
+            </p>
+
+            <p>
+              <span class="icon"><i class="fas fa-map-marker"></i></span> 
+              Los Angeles, CA
+            </p>
           </div>
 
-          <div class="column">
+          <div class="column" data-aos="zoom-in-left">
             <h2 class="about-title"><b>Full stack developer</b> with a passion for building great <b>products.</b></h2>
 
             <p>I'm a tinkerer, a creative, and a builder. Let's talk code, design, and product. Currently interested in software engineering and product management opportunities. .</p>
@@ -109,8 +124,6 @@ Hey friends inspecting my HTML!
       </div>
     </section>
 
-    <script>
-      AOS.init();
-    </script>
+    <script src="./assets/js/willie.js"></script>
   </body>
 </html>
