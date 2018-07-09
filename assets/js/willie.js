@@ -7,8 +7,10 @@ buttons.forEach(function(button) {
   button.onclick = function() {
     var modal = this.dataset.modal
     var modalElement = document.getElementById(modal + '-modal')
+    var htmlElement = document.querySelector('html')
 
     modalElement.classList.add('is-active')
+    htmlElement.classList.add('is-clipped')
   }
 })
 
@@ -19,6 +21,11 @@ modalCloses.forEach(function(modalClose) {
     var parentNode = modalClose.parentNode
     if (parentNode.classList.contains('is-active')) {
       parentNode.classList.remove('is-active')
+    }
+
+    var htmlElement = document.querySelector('html')
+    if (htmlElement.classList.contains('is-clipped')) {
+      htmlElement.classList.remove('is-clipped')
     }
   }
 })
