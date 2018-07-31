@@ -244,6 +244,12 @@ Hey friends inspecting my HTML!
       </div>
     </section>
 
+    <footer>
+      <div class="container">
+        <p>Wilhelm Willie &copy; 2018 | Fight On!</p>
+      </div>
+    </footer>
+
     <!-- Modals -->
     <div class="modal modal-fx-fadeInScale" id="bio-modal" >
       <div class="modal-background click-to-close-modal"></div>
@@ -278,9 +284,11 @@ Hey friends inspecting my HTML!
         <div class="box">
           <h2>AuxQ</h2>
 
-          <img src="http://placehold.it/800x600" alt="Project Image" />
           <h3>What is AuxQ?</h3>
           <p>AuxQ is a service that allows you to crowdsource the aux cord and let your friends make collaborative playlists. The way it works is that you have one master device that plays the music. You can distribute a shareable link to your friends who can add songs to the playlist through a nifty form. Your friends can then collaborate and add songs to the playlist while the master device plays and curates which songs get played.</p>
+
+          <h3>How was AuxQ built?</h3>
+          <p>AuxQ on the back end was built with Node.js, Express, and MongoDB. On the front end, AuxQ uses React and Sockets.io as well as Bootstrap for front end prototyping. Finally, AuxQ is deployed on a Heroku dyno.</p>
         </div>
       </div>
 
@@ -293,6 +301,12 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>SnapDrop</h2>
+
+          <h3>What is SnapDrop?</h3>
+          <p>Built at SB Hacks III, SnapDrop is a community and platform for photography enthusiasts to share and discover great locations for photo shoots. Using SnapDrop is simple: Browse the map and search for snap spots posted by the SnapDrop community. Get inspired by photographers in the area, find great spots to take photos, and share your own. To share photos with the community, double click the map or press the plus in the top right corner, upload your photo, set the correct location, and add a little writeup + details. The result is a collaborative open community and platform for photography enthusiasts, both amateur and professional.</p>
+
+          <h3>How SnapDrop was Built</h3>
+          <p>SnapDrop on the back end is built on top of Node.js/Express and MongoDB. On the front end, SnapDrop uses Vue.js, a lightweight front end library, as well as Bootstrap. In addition, SnapDrop relies heavily on the Google Maps API to provide maps and places data. Finally, SnapDrop is deployed on an Amazon Elastic Beanstalk environment.</p>
         </div>
       </div>
 
@@ -305,6 +319,15 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>SwipeX</h2>
+
+          <h3>What is SwipeX</h3>
+          <p>SwipeX is a mobile app aimed to be a literal "Tinder for X". In many of the communities I'm in, we joke about "X for Y" applications so I set out to build a literal "Tinder for X". Users are prompted to enter in a query which then generates a deck of cards that users can swipe from.</p>
+
+          <p>Like Tinder, you can swipe left on cards you dislike and right on cards you like. Cards that are liked get saved to a collection that you can come back and review.</p>
+
+          <h3>How was SwipeX Built</h3>
+          <p>SwipeX was built using React Native (and various open source components). To get card data, I hooked up the application to hit Google Search API and passed along the "X" as an image query. After getting the data, the hard part was displaying the results in a pretty and nice interface.</p>
+          <p>I've always wanted to build a mobile app and React Native was a great way to get started. Coming from a JavaScript web background made it easy to transition into React Native and the cross-platform development experience was seamless!</p>
         </div>
       </div>
 
@@ -317,6 +340,14 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>Listed</h2>
+
+          <h3>What is Listed</h3>
+          <p>Listed is an online platform for creating and sharing lists of content. On Listed, you can create lists which are collections of items. You can share lists like your favorite albums, favorite movies, reasons for things, and more.</p>
+
+          <p>Users can register and sign-in, contribute to the community, and see what other lists people are creating. Users can also like lists, comment, and be part of the Listed community.</p>
+
+          <h3>How Listed was Built</h3>
+          <p>Listed was developed with Ruby on Rails on the back end, one of my first projects ever built with Rails. On the front end, Listed relies on Bootstrap and jQuery. Listed was deployed on Heroku, my first ever project release on Heroku.</p>
         </div>
       </div>
 
@@ -329,6 +360,17 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>Kit</h2>
+
+          <h3>What is Kit</h3>
+          <p>Kit was a product spun out of LavaLab, USC's startup incubator and community. As millenials move away from traditional beauty outlets like television and magazines, theyre looking for new ways to engage with brands and products through influencers. Generic platforms like YouTube and Pinterest aren't cutting it. Kit is a web platform that helps beauty enthusiasts discover new products, find inspiration , and become part of a global community. The idea is that users can sign up and customize their "beauty profile" and Kit will find recommendations of content creators, products, and video content for the user to check out. On top of that is a community aspect where beauty enthusiasts can connect with content creators and other enthusiasts to foster a healthy and focused makeup community.</p>
+
+          <p>While Kit is currently not live, here you can see videos and screenshots of the product as well as links to our pitch deck which we presented to an audience of LA industry professionals and investors during LavaLab's pitch night.</p>
+
+          <h3>How Kit was Built</h3>
+          <p>The prototype for Kit was developed with Ruby on Rails on the back end. On the front end, Kit relies on Bootstrap and jQuery. Finally, Kit was deployed on a DigitalOcean droplet.</p>
+
+          <h3>More on LavaLab</h3>
+          <p>Kit is a product out of LavaLab, USC’s premier startup incubator and community. Members spend a semester with a group developing a product alongside a thorough curriculum. This curriculum walks groups from ideation to market research to design/development. Groups then pitch their product at LavaLab's demo night to a crowd of investors, industry professionals, and fellow students. To learn more, visit usclavalab.org</p>
         </div>
       </div>
 
@@ -341,6 +383,16 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>Wilbur</h2>
+
+          <h3>What is Wilbur</h3>
+          <p>Wilbur is a friendly twitter bot that can report on demand Twitter profile analytics through tweets. In addition to analyzing twitter profiles, Wilbur can offer motivation/inspiration, hold somewhat intelligible conversations with other twitter users, retrieve information, and more.</p>
+
+          <p>Wilbur originally started as an experimental program so that I could learn how to use the programming language python. However, after tinkering with the language and Twitter's API and getting some input from my friends, I realized Wilbur could be made into something bigger so now he's become an instant Twitter profile analysis service (and more).</p>
+
+          <h3>How Wilbur was Built</h3>
+          <p>There are two sides to Wilbur: a web interface and the Twitter bot itself. The bot side of Wilbur was coded in Python and relies heavily on the tweepy Python Twitter API library. Wilbur sits on a server with a listener that waits for replies mentioning @WilburBot. Upon receiving a reply, Wilbur will process the tweet, search for commands, and perform whatever action was requested. Wilbur also has the capability of generating online reports that can be shared via URL.</p>
+
+          <p>These reports and their data are stored on a Mongo database that can be accessed by Wilbur's web interface, coded in Node.js, which produces shareable online Twitter profile reports. An example of a report can be seen here.</p>
         </div>
       </div>
 
@@ -353,6 +405,14 @@ Hey friends inspecting my HTML!
       <div class="modal-content">
         <div class="box">
           <h2>Tripi</h2>
+
+          <h3>What is Tripi?</h3>
+          <p>Tripi is a web platform that allows users to create and share itineraries for trips around the world. Users pick a central location and map out a travel plan using a user friendly interface with a map and timeline.</p>
+          <h3>Why was Tripi built?</h3>
+          <p>Tripi was the final project for my CSCI 201 class (Principles of Software Development). Our final project was to build a web application using a Java backend and MySQL database that supported login/signup functionality and web sockets.</p>
+
+          <h3>How was Tripi Built?</h3>
+          <p>We integrated with Google Maps, Google Places, and EventBrite's API to support various types of locations and worked across the stack using a Java backend, MySQL database, and jQuery/Bootstrap powered frontend.</p>
         </div>
       </div>
 
