@@ -244,9 +244,9 @@ Hey friends inspecting my HTML!
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>Wilhelm Willie &copy; 2018 | Fight On!</p>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>Wilhelm Willie &copy; 2018 | Fight On</p>
       </div>
     </footer>
 
@@ -284,11 +284,19 @@ Hey friends inspecting my HTML!
         <div class="box">
           <h2>AuxQ</h2>
 
-          <h3>What is AuxQ?</h3>
-          <p>AuxQ is a service that allows you to crowdsource the aux cord and let your friends make collaborative playlists. The way it works is that you have one master device that plays the music. You can distribute a shareable link to your friends who can add songs to the playlist through a nifty form. Your friends can then collaborate and add songs to the playlist while the master device plays and curates which songs get played.</p>
+          <div class="columns">
+            <div class="column is-two-fifths">
+              <img src="http://placehold.it/640x480" />
+            </div>
 
-          <h3>How was AuxQ built?</h3>
-          <p>AuxQ on the back end was built with Node.js, Express, and MongoDB. On the front end, AuxQ uses React and Sockets.io as well as Bootstrap for front end prototyping. Finally, AuxQ is deployed on a Heroku dyno.</p>
+            <div class="column is-three-fifths">
+              <h3>What is AuxQ?</h3>
+              <p>AuxQ is a service that allows you to crowdsource the aux cord and let your friends make collaborative playlists. The way it works is that you have one master device that plays the music. You can distribute a shareable link to your friends who can add songs to the playlist through a nifty form. Your friends can then collaborate and add songs to the playlist while the master device plays and curates which songs get played.</p>
+
+              <h3>How was AuxQ built?</h3>
+              <p>AuxQ on the back end was built with Node.js, Express, and MongoDB. On the front end, AuxQ uses React and Sockets.io as well as Bootstrap for front end prototyping. Finally, AuxQ is deployed on a Heroku dyno.</p>
+            </div>
+          </div>
         </div>
       </div>
 
