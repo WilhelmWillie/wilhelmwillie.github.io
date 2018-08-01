@@ -4,18 +4,3 @@ hr {
   margin-right: auto;
   background-color: #d4d4d4;
 }
-
-.modal-content {
-  width: 800px;
-  height: 80vh;
-
-  .box {
-    padding: 2rem 2rem 1.5rem;
-    overflow-y: scroll;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-}
