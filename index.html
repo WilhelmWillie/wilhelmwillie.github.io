@@ -46,10 +46,12 @@ Hey friends inspecting my HTML!
         </div>
       </div>
 
-      <div class="click-to-scroll"></div>
+      <div class="click-to-scroll" onclick="smoothScroll(document.getElementById('intro'))">
+        <span class="icon"><i class="fas fa-caret-down"></i></span>
+      </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="intro">
       <div class="container">
         <h2 data-aos="fade-down" class="intro-message">I build dope <span class="stuff">$#!+</span></h2>
       </div>

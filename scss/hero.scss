@@ -59,6 +59,14 @@
   bottom: -40px;
   left: -40px;
   background-image: url('../img/click-to-scroll.png');
+  background: #3023ae;
+  background: -moz-linear-gradient(-45deg, #3023ae 0%, #7c198c 100%);
+  background: -webkit-linear-gradient(-45deg, #3023ae 0%,#7c198c 100%);
+  background: linear-gradient(135deg, #3023ae 0%,#7c198c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3023ae', endColorstr='#7c198c',GradientType=1 );
+
+  border-radius: 999px;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.35);
   z-index: 10;
   margin-left: 50%;
   cursor: pointer;
@@ -67,6 +75,12 @@
 
   transition: 0.5s all;
 
+  .icon {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+  }
+  
   &:hover {
     bottom: -45px;
   }
