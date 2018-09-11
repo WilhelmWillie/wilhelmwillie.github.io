@@ -1,0 +1,13 @@
+// Import initial Bulma variables and functions
+@import "../bower_components/bulma/sass/utilities/initial-variables";
+@import "../bower_components/bulma/sass/utilities/functions";
+
+// Variable overrides
+$family-sans-serif: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+$section-padding: 5rem 1.5rem !default;
+
+$modal-content-width: 80%;
+
+// Import Bulma, a CSS framework
+@import "../bower_components/bulma/bulma";

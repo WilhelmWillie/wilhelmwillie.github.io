@@ -1,0 +1,89 @@
+@keyframes click-to-scroll {
+    0% {
+      bottom: -40px
+    }
+
+    50% {
+      bottom: -35px;
+    }
+
+    100% {
+      bottom: -40px;
+    }
+}
+
+.hero {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  position: relative;
+  margin-bottom: 40px;
+
+  .title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    margin-bottom: 1.5rem;
+
+    @include tablet {
+      font-size: 8rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.85rem;
+  }
+
+  &.is-fullheight {
+    min-height: 90vh;
+
+    @include mobile {
+      min-height: 85vh;
+
+      .title {
+        font-size: 4.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .subtitle {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.click-to-scroll {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  background-image: url('../img/click-to-scroll.png');
+  background: #3023ae;
+  background: -moz-linear-gradient(-45deg, #3023ae 0%, #7c198c 100%);
+  background: -webkit-linear-gradient(-45deg, #3023ae 0%,#7c198c 100%);
+  background: linear-gradient(135deg, #3023ae 0%,#7c198c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3023ae', endColorstr='#7c198c',GradientType=1 );
+
+  border-radius: 999px;
+  box-shadow: 0px 3px 4px rgba(0,0,0,0.35);
+  z-index: 10;
+  margin-left: 50%;
+  cursor: pointer;
+
+  animation: click-to-scroll 2s 8;
+
+  transition: 0.5s all;
+
+  .icon {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+  }
+
+  &:hover {
+    bottom: -45px;
+  }
+}
