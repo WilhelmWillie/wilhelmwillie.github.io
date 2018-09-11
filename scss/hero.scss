@@ -40,6 +40,8 @@
     min-height: 90vh;
 
     @include mobile {
+      min-height: 85vh;
+
       .title {
         font-size: 4.5rem;
         margin-bottom: 0.75rem;
@@ -80,7 +82,7 @@
     height: 100%;
     font-size: 3rem;
   }
-  
+
   &:hover {
     bottom: -45px;
   }
