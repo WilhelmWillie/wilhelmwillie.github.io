@@ -5,6 +5,19 @@
 
   .project-preview {
     margin-bottom: 0.5rem;
+    border-radius: 0.15rem;
+    overflow: hidden;
+    border: 1px solid #ededed;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .project-caption {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 700;
   }
 
   .tech-tags {
