@@ -1,3 +1,8 @@
+# This repo is being replaced by https://github.com/WilhelmWillie/portfolio
+*I have decided to migrate from GitHub Pages to Netlify and will rewrite my portfolio site using Next.js + React to take advantage of SSR*
+
+---
+
 # [wilhelmwillie.com](https://wilhelmwillie.com)
 
 *My personal site - Hosted by GitHub Pages*
