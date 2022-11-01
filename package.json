@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "My personal site - Hosted by GitHub Pages",
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.5.3",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^4.0.0",
